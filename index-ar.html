@@ -34,41 +34,54 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services & Industries</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#process">Locations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
-          </li>
-          <!-- Language Switcher -->
-          <li class="nav-item dropdown ms-lg-3 me-lg-5 border-end pe-lg-5">
-            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--secondary-color) !important; font-weight: 600; font-family: 'Arial', sans-serif;">
+      <div class="collapse navbar-collapse flex-column align-items-end" id="navbarNav">
+        <!-- Top Row -->
+        <div class="d-none d-lg-flex w-100 justify-content-end align-items-center pt-1 pb-2 gap-4 navbar-divider">
+          <a href="tel:+966123456789" class="contact-link text-decoration-none small fw-semibold"><i class="fas fa-phone-alt text-secondary me-2"></i>+966 12 345 6789</a>
+          <a href="mailto:info@alhazmi.com" class="contact-link text-decoration-none small fw-semibold"><i class="fas fa-envelope text-secondary me-2"></i>info@alhazmi.com</a>
+          <a href="#" class="contact-link text-decoration-none small fw-semibold"><i class="fas fa-download text-secondary me-2"></i>Download Catalogue</a>
+          
+          <!-- Language Switcher in Top Row -->
+          <div class="dropdown navbar-divider-start ps-4">
+            <a class="contact-link dropdown-toggle text-decoration-none small fw-bold" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--secondary-color) !important; font-family: 'Arial', sans-serif;">
               <i class="fas fa-globe"></i> AR
             </a>
             <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0" aria-labelledby="languageDropdown" style="border-radius: 10px; min-width: 120px;">
               <li><a class="dropdown-item" href="index.html">English (EN)</a></li>
-              <li><a class="dropdown-item fw-bold" href="index-ar.html" style="color: var(--primary-color); font-family: 'Arial', sans-serif;">العربية (AR)</a></li>
+              <li><a class="dropdown-item fw-bold" href="index-ar.html" style="color: var(--primary-color); font-family: 'Arial', sans-serif;">Ø§Ù„Ø¹Ø±Ø¨ÙŠØ© (AR)</a></li>
             </ul>
-          </li>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="d-flex flex-column flex-lg-row w-100 pt-2 pb-1">
+          <div class="d-none d-lg-block" style="flex: 0.6;"></div>
+          
+          <ul class="navbar-nav justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services & Industries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#process">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+
           <!-- Social Icons -->
-          <li class="nav-item d-flex align-items-center gap-3 ms-lg-4 mt-2 mt-lg-0 mb-2 mb-lg-0 pb-3 pb-lg-0">
+          <div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-end mt-3 mt-lg-0" style="flex: 1;">
             <a href="#" class="px-2" style="color: #E1306C; font-size: 1.35rem; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-instagram"></i></a>
             <a href="#" class="px-2" style="color: #1DA1F2; font-size: 1.35rem; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-twitter"></i></a>
             <a href="#" class="px-2" style="color: #1877F2; font-size: 1.35rem; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-facebook-f"></i></a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -77,7 +90,7 @@
   <section id="home" class="hero-section text-start">
     <!-- Video Background -->
     <video autoplay muted loop playsinline class="hero-video">
-      <source src="assets/images/video/banner.mp4" type="video/mp4">
+      <source src="assets/images/video/banner3.mp4" type="video/mp4">
     </video>
     <!-- Overlay -->
     <div class="hero-overlay"></div>
@@ -122,82 +135,78 @@
   </section>
 
   <!-- About Us Section -->
-  <section id="about" class="about-redesign pb-0">
-    <div class="container-fluid p-0">
-      <div class="row g-0 align-items-stretch">
+  <section id="about" style="padding: 100px 0 30px; background-color: #fafafa; overflow: hidden;" dir="rtl">
+    <div class="container">
+      <div class="row align-items-center g-5">
         
-        <!-- Left Column: Full Text -->
-        <div class="col-lg-7 d-flex flex-column justify-content-center p-5 about-left-col" data-aos="fade-right">
-          <div style="max-width: 800px; margin: 0 auto;">
-            <h2 class="about-heading mb-4" style="font-size: 2.8rem; text-transform: none; color: var(--secondary-color);">About Us</h2>
-            <div class="about-text-small" style="font-size: 1.05rem; line-height: 1.8;">
-              <p>Celebrating two decades of excellence, Al Hazmi International is synonymous with cutting-edge industrial food equipment and packaging solutions in Saudi Arabia. Our journey is marked by a steadfast commitment to quality, catering to diverse clients from niche restaurants to luxurious five-star hotels.</p>
-              <p>We are a robust solution provider not just in the food industry, but also in industrial racking and general trading for construction materials. We offer comprehensive, end-to-end solutions including meticulous design, sales, installation, and exceptional aftersales service.</p>
-              <p>Whether you need a single oven or a completely tailored suite, our highly trained engineers stand ready to exceed your expectations with unparalleled dedication.</p>
-              <p class="fw-bold mt-4" style="color: var(--primary-color); font-size: 1.15rem;">Al Hazmi International: Delivering Excellence, Nurturing Relationships, Building the Future.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column: Card & Progress Bars -->
-        <div class="col-lg-5 p-5 d-flex flex-column justify-content-center about-right-col" data-aos="fade-left">
+        <!-- Right Column: Text and Stats (In RTL this appears on the right) -->
+        <div class="col-lg-7 pe-lg-5 text-start" data-aos="fade-left">
           
-          <!-- Profile Card -->
-          <div class="profile-card mb-5">
-            <div class="d-flex align-items-center mb-3">
-              <img src="assets/images/chairman.png" alt="Hassan Al Hazmi" class="profile-avatar rounded-circle me-3" width="50" height="50">
-              <div>
-                <h6 class="mb-0 text-white text-uppercase fw-bold">Hassan Al Hazmi</h6>
-                <small class="text-white-50">Chairman & Co-Founder</small>
-              </div>
-              <div class="ms-auto text-white-50">
-                <i class="fas fa-heart text-danger me-2"></i>
-                <i class="far fa-bookmark"></i>
-              </div>
-            </div>
-            <div class="profile-video-thumb position-relative overflow-hidden mb-3">
-              <img src="assets/images/hero_bg.png" alt="Video Thumb" class="w-100" style="height: 120px; object-fit: cover;">
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="text-white fw-bold text-uppercase" style="font-size: 0.8rem;">@VIDEO BY AL HAZMI</span>
-              <i class="fas fa-arrow-up-right-from-square text-white"></i>
-            </div>
+          <!-- Section Heading -->
+          <h2 class="mb-3" style="font-size: 2.8rem; font-weight: 600; color: #ccaa00;">Ù…Ù† Ù†Ø­Ù†</h2>
+          
+          <!-- Large Heading -->
+          <h2 class="mb-4" style="font-size: 2.2rem; font-weight: 500; color: #2b3a4a; line-height: 1.3;">
+            Al Hazmi International is synonymous with cutting-edge industrial food equipment and packaging solutions.
+          </h2>
+          
+          <!-- Text Paragraphs -->
+          <div style="color: #555; font-size: 1rem; line-height: 1.8; margin-bottom: 40px;">
+            <p>Celebrating two decades of excellence in Saudi Arabia. Our journey is marked by a steadfast commitment to quality, catering to diverse clients from niche restaurants to luxurious five-star hotels.</p>
+            <p>We are a robust solution provider not just in the food industry, but also in industrial racking and general trading for construction materials. We offer comprehensive, end-to-end solutions including meticulous design, sales, installation, and exceptional aftersales service.</p>
+            <p>Whether you need a single oven or a completely tailored suite, our highly trained engineers stand ready to exceed your expectations with unparalleled dedication.</p>
+            <p class="fw-bold mb-0 mt-3" style="color: #2b3a4a;">Al Hazmi International: Delivering Excellence, Nurturing Relationships, Building the Future.</p>
           </div>
-
-          <!-- Progress Bars -->
-          <div class="progress-block mb-4">
-            <div class="d-flex justify-content-between mb-1">
-              <span class="progress-label">EXPERT SUPPORT AND SERVICE</span>
-              <span class="progress-percent" data-target="87">0%</span>
+          
+          <!-- Stats Card -->
+          <div class="d-flex justify-content-between align-items-center p-4" style="background-color: #FDF9F1; border: 1px solid #f2eedd; border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.02);">
+            
+            <div class="text-center px-2">
+              <h3 class="fw-normal mb-1" style="font-size: 2.2rem; color: #4a5568;"><span class="counter-value" data-count="20">0</span><span style="font-size: 1.2rem;">+</span></h3>
+              <p class="mb-0 text-muted" style="font-size: 0.8rem; font-weight: 500;">Years Exp.</p>
             </div>
-            <div class="progress-custom">
-              <div class="progress-custom-bar" data-width="87%" style="width: 0%;"></div>
+            
+            <div style="width: 1px; height: 40px; background-color: #e6e0d4;"></div>
+            
+            <div class="text-center px-2">
+              <h3 class="fw-normal mb-1" style="font-size: 2.2rem; color: #4a5568;"><span class="counter-value" data-count="87">0</span><span style="font-size: 1.2rem;">%</span></h3>
+              <p class="mb-0 text-muted" style="font-size: 0.8rem; font-weight: 500;">Expert Support</p>
             </div>
+            
+            <div style="width: 1px; height: 40px; background-color: #e6e0d4;"></div>
+            
+            <div class="text-center px-2">
+              <h3 class="fw-normal mb-1" style="font-size: 2.2rem; color: #4a5568;"><span class="counter-value" data-count="90">0</span><span style="font-size: 1.2rem;">%</span></h3>
+              <p class="mb-0 text-muted" style="font-size: 0.8rem; font-weight: 500;">Maintenance</p>
+            </div>
+            
+            <div style="width: 1px; height: 40px; background-color: #e6e0d4;"></div>
+            
+            <div class="text-center px-2">
+              <h3 class="fw-normal mb-1" style="font-size: 2.2rem; color: #4a5568;"><span class="counter-value" data-count="88">0</span><span style="font-size: 1.2rem;">%</span></h3>
+              <p class="mb-0 text-muted" style="font-size: 0.8rem; font-weight: 500;">Consulting</p>
+            </div>
+            
           </div>
-
-          <div class="progress-block mb-4">
-            <div class="d-flex justify-content-between mb-1">
-              <span class="progress-label">MAINTENANCE & REPAIR</span>
-              <span class="progress-percent" data-target="90">0%</span>
-            </div>
-            <div class="progress-custom">
-              <div class="progress-custom-bar" data-width="90%" style="width: 0%;"></div>
-            </div>
-          </div>
-
-          <div class="progress-block">
-            <div class="d-flex justify-content-between mb-1">
-              <span class="progress-label">CONSULTING AND PLANNING</span>
-              <span class="progress-percent" data-target="88">0%</span>
-            </div>
-            <div class="progress-custom">
-              <div class="progress-custom-bar" data-width="88%" style="width: 0%;"></div>
-            </div>
-          </div>
-
+          
         </div>
+
+        <!-- Left Column: Image (In RTL this appears on the left) -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="position-relative d-inline-block w-100">
+            <!-- The main image -->
+            <img src="assets/images/about2 (1).jpeg" alt="About Al Hazmi" class="img-fluid w-100" style="border-radius: 30px; object-fit: cover; height: 550px;">
+            
+            <!-- Badge -->
+            <div class="position-absolute d-flex align-items-center justify-content-center" style="bottom: -20px; left: -10px; right: auto; background-color: #0b2239; color: white; padding: 12px 25px; border-radius: 30px; font-weight: 500; font-size: 0.95rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+              <i class="fas fa-globe-americas ms-2" style="color: #0d6efd;"></i> Industrial Experts
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
+  </section>
     
     <!-- Partners Heading -->
     <div class="container-fluid px-5 pb-3 pt-4">
@@ -266,7 +275,7 @@
           <div class="mx-5 d-flex align-items-center">
             <div class="fs-2 me-1 d-flex flex-column align-items-center" style="line-height: 0.5; color: #005eb8;">
               <i class="fas fa-mitten"></i>
-              <span class="text-danger mt-1" style="font-size: 0.6rem;">●</span>
+              <span class="text-danger mt-1" style="font-size: 0.6rem;">â—</span>
             </div>
             <span class="text-dark fw-bolder fs-3" style="letter-spacing: -1px;">RU.IN.CAR</span>
           </div>
@@ -321,7 +330,7 @@
           <div class="mx-5 d-flex align-items-center">
             <div class="fs-2 me-1 d-flex flex-column align-items-center" style="line-height: 0.5; color: #005eb8;">
               <i class="fas fa-mitten"></i>
-              <span class="text-danger mt-1" style="font-size: 0.6rem;">●</span>
+              <span class="text-danger mt-1" style="font-size: 0.6rem;">â—</span>
             </div>
             <span class="text-dark fw-bolder fs-3" style="letter-spacing: -1px;">RU.IN.CAR</span>
           </div>
@@ -354,7 +363,7 @@
   </section>
 
   <!-- Our Mission Section -->
-  <section id="mission" class="mission-section" style="background: url('assets/images/bg2.jpg') center center/cover no-repeat; padding: 120px 0; position: relative;">
+  <section id="mission" class="mission-section" style="background: url('assets/images/bg2.jpg') center center/cover no-repeat; padding: 60px 0; position: relative;">
     <div class="container">
       <div class="text-center mb-5" data-aos="fade-up">
         <h2 style="font-size: 3rem; font-weight: 700; color: var(--secondary-color); font-family: 'Playfair Display', serif;">Our Mission</h2>
@@ -395,28 +404,58 @@
           </div>
         </div>
       </div>
+
+      <!-- Company Statistics -->
+      <div class="stats-container mt-4 pt-4" dir="rtl">
+        <div class="row text-center justify-content-center align-items-center">
+          
+          <!-- Stat 1 -->
+          <div class="col-md-4 mb-4 mb-md-0 position-relative">
+            <div class="d-flex justify-content-center align-items-center mb-2">
+              <h2 class="display-5 fw-bold counter-value mb-0" data-count="3" style="font-family: 'Playfair Display', serif; color: #ccaa00;">0</h2>
+              <span style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: bold; color: #ccaa00;" class="ms-2"> Ù…Ù„ÙŠÙˆÙ† Ù‚Ø¯Ù… Ù…Ø±Ø¨Ø¹</span>
+            </div>
+            <p class="fs-5 mb-0" style="color: #ffffff;">Ù…Ù† Ù…Ø³Ø§Ø­Ø© Ø§Ù„ØªØµÙ†ÙŠØ¹</p>
+            <div class="position-absolute top-50 start-0 translate-middle-y d-none d-md-block" style="width: 1px; height: 60px; background-color: rgba(255,255,255,0.3);"></div>
+          </div>
+          
+          <!-- Stat 2 -->
+          <div class="col-md-4 mb-4 mb-md-0 position-relative">
+            <h2 class="display-5 fw-bold mb-2 counter-value" data-count="250000" style="font-family: 'Playfair Display', serif; color: #ccaa00;">0</h2>
+            <p class="fs-5 mb-0" style="color: #ffffff;">Ù…ÙˆÙ‚Ø¹ Ù…Ù†ØµØ© Ù†Ù‚Ø§Ù„Ø©</p>
+            <div class="position-absolute top-50 start-0 translate-middle-y d-none d-md-block" style="width: 1px; height: 60px; background-color: rgba(255,255,255,0.3);"></div>
+          </div>
+          
+          <!-- Stat 3 -->
+          <div class="col-md-4">
+            <h2 class="display-5 fw-bold mb-2 counter-value" data-count="25" style="font-family: 'Playfair Display', serif; color: #ccaa00;">0</h2>
+            <p class="fs-5 mb-0" style="color: #ffffff;">ÙˆØ­Ø¯Ø§Øª ØªØµÙ†ÙŠØ¹</p>
+          </div>
+          
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Our Products Section -->
-  <section class="products-section" id="products" style="padding: 120px 0; background-color: rgba(253, 183, 36, 0.08);">
+  <section class="products-section bg-white" id="products" dir="rtl" style="padding: 120px 0;">
     <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 style="font-size: 3rem; font-weight: 700; color: var(--secondary-color); font-family: 'Playfair Display', serif;">Our Products</h2>
-        <div style="width: 80px; height: 4px; background-color: var(--secondary-color); margin: 15px auto 0;"></div>
+      <div class="mb-5" data-aos="fade-up">
+        <h2 style="font-size: 2.8rem; font-weight: 600; color: #ccaa00;">Our Products</h2>
       </div>
       
-      <div class="row justify-content-center g-4 mt-4">
+      <div class="row g-4">
         <!-- Bakery Equipment -->
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <a href="bakery-equipment.html" class="text-decoration-none">
-            <div class="product-category-card position-relative rounded-4 h-100 shadow-sm border border-light bg-white overflow-hidden">
-              <div class="product-img-wrapper w-100" style="height: 250px; background: url('assets/images/bakery.jpg') center/cover; transition: transform 0.6s ease;"></div>
-              <div class="overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.2); top: 0; left: 0;"></div>
-              
-              <div class="hover-content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center" style="top: 0; left: 0; transition: all 0.4s ease;">
-                <h3 class="fw-bold mb-4 text-center px-3" style="color: var(--secondary-color); font-family: 'Playfair Display', serif; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Bakery Equipment</h3>
-                <span class="btn btn-primary-custom rounded-pill px-4">View</span>
+            <div class="product-category-card rounded-4 bg-white border h-100 overflow-hidden d-flex flex-column" style="border-color: #f0f0f0; box-shadow: 0 4px 20px rgba(0,0,0,0.03); transition: transform 0.3s ease;">
+              <div class="product-img-wrapper w-100" style="height: 260px; background: url('assets/images/bakery.jpg') center/cover;"></div>
+              <div class="d-flex justify-content-between align-items-center p-4 mt-auto">
+                <h3 class="m-0 fw-bold" style="font-size: 1.2rem; color: #000000;">Bakery Equipment</h3>
+                <div class="d-flex align-items-center">
+                  <span style="color: #dc3545; font-size: 1.5rem; line-height: 0; margin-left: 6px; font-weight: 300;">â—‹</span>
+                  <i class="fas fa-arrow-left" style="color: #6c757d; font-size: 1rem;"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -425,13 +464,14 @@
         <!-- Pastry Equipment -->
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
           <a href="pastry-equipment.html" class="text-decoration-none">
-            <div class="product-category-card position-relative rounded-4 h-100 shadow-sm border border-light bg-white overflow-hidden">
-              <div class="product-img-wrapper w-100" style="height: 250px; background: url('assets/images/pastry.jpg') center/cover; transition: transform 0.6s ease;"></div>
-              <div class="overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.2); top: 0; left: 0;"></div>
-              
-              <div class="hover-content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center" style="top: 0; left: 0; transition: all 0.4s ease;">
-                <h3 class="fw-bold mb-4 text-center px-3" style="color: var(--secondary-color); font-family: 'Playfair Display', serif; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Pastry Equipment</h3>
-                <span class="btn btn-primary-custom rounded-pill px-4">View</span>
+            <div class="product-category-card rounded-4 bg-white border h-100 overflow-hidden d-flex flex-column" style="border-color: #f0f0f0; box-shadow: 0 4px 20px rgba(0,0,0,0.03); transition: transform 0.3s ease;">
+              <div class="product-img-wrapper w-100" style="height: 260px; background: url('assets/images/pastry.jpg') center/cover;"></div>
+              <div class="d-flex justify-content-between align-items-center p-4 mt-auto">
+                <h3 class="m-0 fw-bold" style="font-size: 1.2rem; color: #000000;">Pastry Equipment</h3>
+                <div class="d-flex align-items-center">
+                  <span style="color: #dc3545; font-size: 1.5rem; line-height: 0; margin-left: 6px; font-weight: 300;">â—‹</span>
+                  <i class="fas fa-arrow-left" style="color: #6c757d; font-size: 1rem;"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -440,13 +480,14 @@
         <!-- Chocolate Machine -->
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <a href="chocolate-machines.html" class="text-decoration-none">
-            <div class="product-category-card position-relative rounded-4 h-100 shadow-sm border border-light bg-white overflow-hidden">
-              <div class="product-img-wrapper w-100" style="height: 250px; background: url('assets/images/chocolate.jpg') center/cover; transition: transform 0.6s ease;"></div>
-              <div class="overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.2); top: 0; left: 0;"></div>
-              
-              <div class="hover-content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center" style="top: 0; left: 0; transition: all 0.4s ease;">
-                <h3 class="fw-bold mb-4 text-center px-3" style="color: var(--secondary-color); font-family: 'Playfair Display', serif; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Chocolate Machine</h3>
-                <span class="btn btn-primary-custom rounded-pill px-4">View</span>
+            <div class="product-category-card rounded-4 bg-white border h-100 overflow-hidden d-flex flex-column" style="border-color: #f0f0f0; box-shadow: 0 4px 20px rgba(0,0,0,0.03); transition: transform 0.3s ease;">
+              <div class="product-img-wrapper w-100" style="height: 260px; background: url('assets/images/chocolate.jpg') center/cover;"></div>
+              <div class="d-flex justify-content-between align-items-center p-4 mt-auto">
+                <h3 class="m-0 fw-bold" style="font-size: 1.2rem; color: #000000;">Chocolate Machine</h3>
+                <div class="d-flex align-items-center">
+                  <span style="color: #dc3545; font-size: 1.5rem; line-height: 0; margin-left: 6px; font-weight: 300;">â—‹</span>
+                  <i class="fas fa-arrow-left" style="color: #6c757d; font-size: 1rem;"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -455,13 +496,14 @@
         <!-- Production Line -->
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
           <a href="production-line.html" class="text-decoration-none">
-            <div class="product-category-card position-relative rounded-4 h-100 shadow-sm border border-light bg-white overflow-hidden">
-              <div class="product-img-wrapper w-100" style="height: 250px; background: url('assets/images/production.jpg') center/cover; transition: transform 0.6s ease;"></div>
-              <div class="overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.2); top: 0; left: 0;"></div>
-              
-              <div class="hover-content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center" style="top: 0; left: 0; transition: all 0.4s ease;">
-                <h3 class="fw-bold mb-4 text-center px-3" style="color: var(--secondary-color); font-family: 'Playfair Display', serif; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Production Line</h3>
-                <span class="btn btn-primary-custom rounded-pill px-4">View</span>
+            <div class="product-category-card rounded-4 bg-white border h-100 overflow-hidden d-flex flex-column" style="border-color: #f0f0f0; box-shadow: 0 4px 20px rgba(0,0,0,0.03); transition: transform 0.3s ease;">
+              <div class="product-img-wrapper w-100" style="height: 260px; background: url('assets/images/production.jpg') center/cover;"></div>
+              <div class="d-flex justify-content-between align-items-center p-4 mt-auto">
+                <h3 class="m-0 fw-bold" style="font-size: 1.2rem; color: #000000;">Production Line</h3>
+                <div class="d-flex align-items-center">
+                  <span style="color: #dc3545; font-size: 1.5rem; line-height: 0; margin-left: 6px; font-weight: 300;">â—‹</span>
+                  <i class="fas fa-arrow-left" style="color: #6c757d; font-size: 1rem;"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -470,13 +512,14 @@
         <!-- Packaging Solution -->
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
           <a href="packing-machines.html" class="text-decoration-none">
-            <div class="product-category-card position-relative rounded-4 h-100 shadow-sm border border-light bg-white overflow-hidden">
-              <div class="product-img-wrapper w-100" style="height: 250px; background: url('assets/images/packing.jpg') center/cover; transition: transform 0.6s ease;"></div>
-              <div class="overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.2); top: 0; left: 0;"></div>
-              
-              <div class="hover-content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center" style="top: 0; left: 0; transition: all 0.4s ease;">
-                <h3 class="fw-bold mb-4 text-center px-3" style="color: var(--secondary-color); font-family: 'Playfair Display', serif; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Packaging Solution</h3>
-                <span class="btn btn-primary-custom rounded-pill px-4">View</span>
+            <div class="product-category-card rounded-4 bg-white border h-100 overflow-hidden d-flex flex-column" style="border-color: #f0f0f0; box-shadow: 0 4px 20px rgba(0,0,0,0.03); transition: transform 0.3s ease;">
+              <div class="product-img-wrapper w-100" style="height: 260px; background: url('assets/images/packing.jpg') center/cover;"></div>
+              <div class="d-flex justify-content-between align-items-center p-4 mt-auto">
+                <h3 class="m-0 fw-bold" style="font-size: 1.2rem; color: #000000;">Packaging Solution</h3>
+                <div class="d-flex align-items-center">
+                  <span style="color: #dc3545; font-size: 1.5rem; line-height: 0; margin-left: 6px; font-weight: 300;">â—‹</span>
+                  <i class="fas fa-arrow-left" style="color: #6c757d; font-size: 1rem;"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -486,161 +529,213 @@
   </section>
 
   <!-- Services & Industries Section -->
-  <section class="bg-light" id="services">
+  <section id="services" class="services-grid-section" dir="rtl">
     <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h2 style="color: var(--secondary-color) !important;">Our Services</h2>
+      <h2 class="services-grid-title" data-aos="fade-up">Ù†Ø®Ø¯Ù… Ù…Ø¬Ù…ÙˆØ¹Ø© Ù…ØªÙ†ÙˆØ¹Ø©<br>Ù…Ù† Ø§Ù„ØµÙ†Ø§Ø¹Ø§Øª</h2>
+      
+      <div class="services-grid" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 42V20l12-8 12 8v22H6z" stroke="var(--svg-primary)" />
+              <path d="M30 30l12-8v20H30" stroke="var(--svg-primary)" />
+              <circle cx="18" cy="28" r="4" stroke="var(--svg-accent)" />
+              <path d="M18 20v2m0 12v2m-6-8h2m12 0h2" stroke="var(--svg-accent)" />
+            </svg>
+          </div>
+          <div class="service-name">Ø¢Ù„Ø§Øª Ø§Ù„ØºØ°Ø§Ø¡</div>
+        </div>
+
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 16l18-8 18 8v16l-18 8-18-8V16z" stroke="var(--svg-primary)" />
+              <path d="M6 16l18 8 18-8M24 24v16" stroke="var(--svg-primary)" />
+              <path d="M19 12l10 4M29 12l-10 4" stroke="var(--svg-accent)" />
+            </svg>
+          </div>
+          <div class="service-name">Ù…ÙˆØ§Ø¯ Ø§Ù„ØªØ¹Ø¨Ø¦Ø© ÙˆØ§Ù„ØªØºÙ„ÙŠÙ</div>
+        </div>
+
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 6v36M40 6v36M8 14h32M8 26h32M8 38h32" stroke="var(--svg-primary)" />
+              <path d="M14 26v-8h10v8H14z" stroke="var(--svg-accent)" />
+              <path d="M26 38v-6h10v6H26z" stroke="var(--svg-primary)" />
+            </svg>
+          </div>
+          <div class="service-name">Ø§Ù„Ø±ÙÙˆÙ Ø§Ù„ØµÙ†Ø§Ø¹ÙŠØ©</div>
+        </div>
+
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 8v32M10 24h28M14 14l20 20M34 14L14 34" stroke="var(--svg-primary)" />
+              <path d="M24 8l-4 4M24 8l4 4M10 24l4-4M10 24l4 4" stroke="var(--svg-accent)" />
+            </svg>
+          </div>
+          <div class="service-name">Ø§Ù„ØªØ¨Ø±ÙŠØ¯</div>
+        </div>
+
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 14v10M14 30l10-6 10 6" stroke="var(--svg-primary)" />
+              <circle cx="24" cy="10" r="4" stroke="var(--svg-accent)" />
+              <circle cx="10" cy="34" r="4" stroke="var(--svg-primary)" />
+              <circle cx="38" cy="34" r="4" stroke="var(--svg-primary)" />
+              <path d="M10 38h28" stroke="var(--svg-accent)" stroke-dasharray="2 4"/>
+            </svg>
+          </div>
+          <div class="service-name">Ø§Ù„Ø´Ø¨ÙƒØ§Øª</div>
+        </div>
+
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 38h32v-8c0-4-16-4-16-12 0 8-16 8-16 12v8z" stroke="var(--svg-primary)" />
+              <path d="M8 30s4 4 8 0 4-4 8 0 4 4 8 0 4-4 8 0" stroke="var(--svg-primary)" />
+              <path d="M24 16v-6M20 12v-2M28 12v-2" stroke="var(--svg-accent)" />
+            </svg>
+          </div>
+          <div class="service-name">Ø¥Ù†ØªØ§Ø¬ Ø§Ù„Ù…Ø®Ø§Ø¨Ø²</div>
+        </div>
+
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 12h24v24H12z" stroke="var(--svg-primary)" />
+              <path d="M24 18v12M18 24h12M20 20l8 8M28 20l-8 8" stroke="var(--svg-accent)" />
+            </svg>
+          </div>
+          <div class="service-name">Ø§Ù„Ù…Ø¹Ø§Ù„Ø¬Ø© Ø§Ù„Ù…Ø¬Ù…Ø¯Ø©</div>
+        </div>
+
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 34h2v-4M40 34h2v-8l-6-6H30" stroke="var(--svg-primary)" />
+              <path d="M6 14h24v16H6z" stroke="var(--svg-primary)" />
+              <circle cx="14" cy="34" r="4" stroke="var(--svg-accent)" />
+              <circle cx="34" cy="34" r="4" stroke="var(--svg-accent)" />
+              <path d="M30 20h6v6h-6z" stroke="var(--svg-primary)" />
+            </svg>
+          </div>
+          <div class="service-name">ØªÙˆØ²ÙŠØ¹ Ø§Ù„Ø³Ù„Ø¹ Ø§Ù„Ø§Ø³ØªÙ‡Ù„Ø§ÙƒÙŠØ©</div>
+        </div>
+
+        <div class="service-grid-item">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="16" stroke="var(--svg-primary)" />
+              <ellipse cx="24" cy="24" rx="8" ry="16" stroke="var(--svg-primary)" />
+              <path d="M8 24h32" stroke="var(--svg-primary)" />
+              <path d="M24 8A18 18 0 0142 24" stroke="var(--svg-accent)" />
+              <path d="M42 20v4h-4" stroke="var(--svg-accent)" />
+            </svg>
+          </div>
+          <div class="service-name">Ø§Ù„ØªØ¬Ø§Ø±Ø© Ø§Ù„Ø¹Ø§Ù…Ø©</div>
+        </div>
+
+        <div class="service-grid-item highlight-item">
+          <div class="service-name">+10</div>
+          <div class="highlight-subtitle">ØµÙ†Ø§Ø¹Ø§Øª</div>
+        </div>
+
       </div>
-      <div class="row g-4 mb-5 pb-5">
-        <!-- Service 1 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-cogs fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
-            </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">Industrial</span> Food Machinery Line</h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">Delivering comprehensive and advanced automated solutions to streamline and elevate your food production processes.</p>
-            </div>
-          </div>
-        </div>
+    </div>
+  </section>
 
-        <!-- Service 2 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('assets/images/production.jpg') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-box-open fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
-            </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">Industrial</span> Packing & Materials</h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">High-speed packaging solutions and premium materials designed to protect your products and enhance efficiency.</p>
-            </div>
-          </div>
+  <!-- Our Clients Section -->
+  <section class="clients-section pb-0" id="clients" dir="rtl" style="background-color: #FDF9F1; padding-top: 60px;">
+    <div class="container">
+      <h2 class="clients-title" data-aos="fade-up">Ø¹Ù…Ù„Ø§Ø¦Ù†Ø§</h2>
+      
+      <!-- Top Row (Scrolls Left) -->
+      <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="marquee-track">
+          <!-- Items -->
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          
+          <!-- Duplicate for seamless scroll -->
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
         </div>
+      </div>
 
-        <!-- Service 3 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-layer-group fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
-            </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">Industrial</span> Racking</h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">Robust and customized warehousing solutions to optimize storage capacity and improve inventory management.</p>
-            </div>
-          </div>
+      <!-- Bottom Row (Scrolls Right) -->
+      <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <div class="marquee-track reverse">
+          <!-- Items -->
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+
+          <!-- Duplicate -->
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
+          <div class="client-card"><img src="https://placehold.co/180x80/fff9e6/ccaa00?text=Client+Logo" alt="Client Logo"></div>
         </div>
+      </div>
+      
+      <p class="clients-disclaimer mb-0 pb-0" data-aos="fade-in" data-aos-delay="300">*Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø¹Ù„Ø§Ù…Ø§Øª Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ© ÙˆØ¹Ù„Ø§Ù…Ø§Øª Ø§Ù„Ø®Ø¯Ù…Ø© ÙˆØ£Ø³Ù…Ø§Ø¡ Ø§Ù„Ø´Ø±ÙƒØ§Øª Ù‡ÙŠ Ù…Ù„Ùƒ Ù„Ø£ØµØ­Ø§Ø¨Ù‡Ø§ Ø§Ù„Ù…Ø¹Ù†ÙŠÙŠÙ†</p>
+    </div>
+  </section>
 
-        <!-- Service 4 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('assets/images/refrigeration.jpg') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-snowflake fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
+  <!-- Global Presence Section -->
+  <section class="global-presence-section position-relative d-flex align-items-center" dir="rtl" style="background: url('assets/images/map2.jpeg') center center/cover no-repeat; min-height: 550px; padding: 40px 0;">
+    <div class="container position-relative z-2">
+      <div class="row align-items-center">
+        <!-- Content Side -->
+        <div class="col-lg-5" data-aos="fade-left">
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 500; color: #000000; margin-bottom: 2rem; line-height: 1.2;">
+            ØªÙˆØ§Ø¬Ø¯Ù†Ø§<br>Ø§Ù„Ø¯ÙˆÙ„ÙŠ
+          </h2>
+          
+          <div class="presence-stats mb-5 mt-4">
+            <!-- Location 1 -->
+            <div class="mb-4">
+              <h3 style="font-family: 'Playfair Display', serif; color: #ccaa00; font-size: 2.2rem; font-weight: 400; margin-bottom: 0;">Ø¥ÙŠØ·Ø§Ù„ÙŠØ§</h3>
             </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">Refrigeration</span></h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">State-of-the-art cooling systems ensuring maximum freshness and compliance with all food safety standards.</p>
+            
+            <!-- Location 2 -->
+            <div class="mb-4">
+              <h3 style="font-family: 'Playfair Display', serif; color: #ccaa00; font-size: 2.2rem; font-weight: 400; margin-bottom: 0;">Ø§Ù„Ù…Ù…Ù„ÙƒØ© Ø§Ù„Ø¹Ø±Ø¨ÙŠØ© Ø§Ù„Ø³Ø¹ÙˆØ¯ÙŠØ©</h3>
             </div>
-          </div>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('assets/images/netwoking.jpg') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-network-wired fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
+            
+            <!-- Location 3 -->
+            <div class="mb-4">
+              <h3 style="font-family: 'Playfair Display', serif; color: #ccaa00; font-size: 2.2rem; font-weight: 400; margin-bottom: 0;">Ø§Ù„Ø¥Ù…Ø§Ø±Ø§Øª Ø§Ù„Ø¹Ø±Ø¨ÙŠØ© Ø§Ù„Ù…ØªØ­Ø¯Ø©</h3>
             </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">Networking</span></h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">Reliable and secure IT infrastructure solutions to keep your industrial and office operations connected seamlessly.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 6 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('assets/images/bakery.jpg') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-bread-slice fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
-            </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">Bakery</span> Production</h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">Complete bakery lines equipped with the latest technology for high-volume, consistent, and quality baking.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 7 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('assets/images/forzen.jpg') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-icicles fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
-            </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">Frozen</span> Food Processing</h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">Advanced machinery designed for rapid freezing and safe processing of meats, vegetables, and pre-cooked meals.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 8 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('assets/images/fmcg.jpg') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-truck-loading fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
-            </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">FMCG</span> Distribution</h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">Extensive logistics and distribution networks ensuring Fast-Moving Consumer Goods reach markets efficiently.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 9 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="card border-0 rounded-0 shadow h-100 bg-white">
-            <div class="position-relative" style="height: 240px;">
-              <div class="w-100 h-100" style="background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80') center/cover;"></div>
-              <div class="position-absolute top-0 start-0 d-flex justify-content-center align-items-center" style="width: 60px; height: 60px; background-color: var(--secondary-color);">
-                <i class="fas fa-globe fa-2x" style="color: #000;"></i>
-              </div>
-              <div class="position-absolute top-0 end-0 px-3 py-1 mt-2 me-2" style="background-color: #2a2a2a; color: #ccc; font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #444;">SERVICE</div>
-            </div>
-            <div class="card-body p-4 text-start">
-              <h5 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1.1rem;"><span style="color: var(--secondary-color);">General</span> Trading</h5>
-              <p class="mb-0 text-muted" style="font-size: 0.95rem;">Global sourcing and trading expertise connecting you with premium suppliers and dynamic international markets.</p>
+            
+            <!-- Location 4 -->
+            <div class="mb-4">
+              <h3 style="font-family: 'Playfair Display', serif; color: #ccaa00; font-size: 2.2rem; font-weight: 400; margin-bottom: 0;">Ø§Ù„ØµÙŠÙ†</h3>
             </div>
           </div>
         </div>
@@ -648,22 +743,12 @@
     </div>
   </section>
 
-  <!-- Process & Locations Section -->
-  <section class="process-section pt-1 pb-5" id="process" style="background-color: #fff9e6;">
+  <!-- Local Branches Section -->
+  <section class="process-section py-5" id="process" style="background-color: #fff9e6;" dir="rtl">
     <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Our Presence & Locations</h2>
-      </div>
-      <div class="row align-items-center mb-4">
-        <div class="col-12 text-center" data-aos="fade-up">
-          <h4 class="mb-4" style="color: var(--secondary-color);">Our International Presence</h4>
-          <div class="d-flex justify-content-center gap-4 mb-5 flex-wrap">
-            <span class="badge bg-success fs-5 px-4 py-2" style="background-color: var(--primary-color) !important;">ITALY</span>
-            <span class="badge bg-success fs-5 px-4 py-2" style="background-color: var(--primary-color) !important;">KSA</span>
-            <span class="badge bg-success fs-5 px-4 py-2" style="background-color: var(--primary-color) !important;">UAE</span>
-            <span class="badge bg-success fs-5 px-4 py-2" style="background-color: var(--primary-color) !important;">CHINA</span>
-          </div>
-        </div>
+      <div class="section-title mb-5" data-aos="fade-up">
+        <h2>ÙØ±ÙˆØ¹Ù†Ø§ Ø§Ù„Ù…Ø­Ù„ÙŠØ©</h2>
+        <div style="width: 80px; height: 4px; background-color: var(--secondary-color); margin: 15px auto 0;"></div>
       </div>
       
       <div class="row g-4 justify-content-center">
@@ -728,58 +813,121 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact-section py-5 bg-white" id="contact">
+  <section class="contact-section py-5 bg-white" id="contact" style="padding-top: 100px !important; padding-bottom: 100px !important;" dir="rtl">
     <div class="container">
-      <div class="section-title text-center mb-5" data-aos="fade-up">
-        <h2 style="color: var(--secondary-color) !important;">Contact Us</h2>
-        <div style="width: 80px; height: 4px; background-color: var(--primary-color); margin: 15px auto 0;"></div>
-      </div>
-      <div class="row g-4 align-items-stretch">
-        <!-- Image Side -->
-        <div class="col-lg-5" data-aos="fade-right">
-          <div class="h-100 rounded-4 overflow-hidden shadow-sm border border-light" style="min-height: 350px;">
-            <img src="assets/images/contact (2).jpg" alt="Contact Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
+      <div class="row g-5 align-items-center">
+        
+        <!-- Left Side (Text) -->
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="ps-lg-5 d-flex flex-column justify-content-center h-100 text-end">
+            <h2 class="mb-4" style="color: #ccaa00; font-size: 3.2rem; font-weight: 500; line-height: 1.2;">ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§!</h2>
+            <p class="mb-5" style="color: #4a4a4a; font-size: 1.15rem; line-height: 1.8;">
+              Ø³ÙˆØ§Ø¡ ÙƒØ§Ù† Ù„Ø¯ÙŠÙƒ Ø³Ø¤Ø§Ù„ Ø­ÙˆÙ„ Ù…Ù†ØªØ¬Ø§ØªÙ†Ø§ØŒ Ø£Ùˆ Ø§Ù„Ø£Ø³Ø¹Ø§Ø±ØŒ Ø£Ùˆ Ø§Ù„Ø·Ù„Ø¨Ø§Øª Ø§Ù„Ø¯ÙˆÙ„ÙŠØ©ØŒ Ù†Ø­Ù† Ù‡Ù†Ø§ Ù„Ù…Ø³Ø§Ø¹Ø¯ØªÙƒ ÙÙŠ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø§Ø³ØªÙØ³Ø§Ø±Ø§Øª Ø§Ù„Ø®Ø§ØµØ© Ø¨Ø¹Ù…Ù„Ùƒ.
+            </p>
+            <div>
+              <p class="mb-1" style="color: #4a4a4a; font-size: 1.2rem;">Ø£Ùˆ ÙÙ‚Ø· ØªØ±ÙŠØ¯ Ø¥Ù„Ù‚Ø§Ø¡ Ø§Ù„ØªØ­ÙŠØ©ØŸ</p>
+              <p class="m-0" style="color: #ccaa00; font-size: 1.3rem; font-weight: 600;" dir="ltr">info@alhazmi.com</p>
+            </div>
           </div>
         </div>
-        <!-- Form Side -->
-        <div class="col-lg-7" data-aos="fade-left">
-          <div class="p-4 h-100 rounded-4 shadow-sm border border-light" style="background-color: #f6f7f9;">
-            <h3 class="fw-bold mb-3" style="color: #2a2a2a; font-family: 'Playfair Display', serif;">Get In Touch</h3>
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label fw-bold text-secondary mb-1" style="font-size: 0.9rem;">Name</label>
-                  <input type="text" class="form-control p-2 border-0 bg-white" placeholder="Your Name" style="border-radius: 0; box-shadow: none;">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label fw-bold text-secondary mb-1" style="font-size: 0.9rem;">Email</label>
-                  <input type="email" class="form-control p-2 border-0 bg-white" placeholder="Your Email" style="border-radius: 0; box-shadow: none;">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label fw-bold text-secondary mb-1" style="font-size: 0.9rem;">Number</label>
-                  <input type="tel" class="form-control p-2 border-0 bg-white" placeholder="Your Phone Number" style="border-radius: 0; box-shadow: none;">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label fw-bold text-secondary mb-1" style="font-size: 0.9rem;">Address</label>
-                  <input type="text" class="form-control p-2 border-0 bg-white" placeholder="Your Address" style="border-radius: 0; box-shadow: none;">
-                </div>
-                <div class="col-12">
-                  <label class="form-label fw-bold text-secondary mb-1" style="font-size: 0.9rem;">Message</label>
-                  <textarea class="form-control p-2 border-0 bg-white" rows="4" placeholder="How can we help you?" style="border-radius: 0; box-shadow: none; resize: none;"></textarea>
-                </div>
-                <div class="col-12 mt-3">
-                  <button type="submit" class="btn rounded-pill w-100 py-2 fw-bold text-dark text-uppercase border-0 shadow-sm" style="background-color: var(--secondary-color); letter-spacing: 1.5px; font-size: 1rem;">SEND MESSAGE</button>
+        
+        <!-- Right Side (Form) -->
+        <div class="col-lg-7" data-aos="fade-right">
+          <form>
+            <div class="row g-4 mt-1">
+              
+              <!-- First Name -->
+              <div class="col-md-6 mt-4">
+                <div class="position-relative">
+                  <label class="position-absolute bg-white px-2" style="top: -12px; right: 15px; font-size: 0.85rem; font-weight: 600; color: #333;">Ø§Ù„Ø§Ø³Ù… Ø§Ù„Ø£ÙˆÙ„ <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control shadow-none" placeholder="Ø§Ù„Ø§Ø³Ù…" style="height: 52px; border-radius: 8px; border: 1px solid #e0e0e0; padding: 15px; font-size: 1rem; color: #555;">
                 </div>
               </div>
-            </form>
-          </div>
+              
+              <!-- Last Name -->
+              <div class="col-md-6 mt-4">
+                <div class="position-relative">
+                  <label class="position-absolute bg-white px-2" style="top: -12px; right: 15px; font-size: 0.85rem; font-weight: 600; color: #333;">Ø§Ù„Ø§Ø³Ù… Ø§Ù„Ø£Ø®ÙŠØ± <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control shadow-none" placeholder="Ø§Ù„Ø§Ø³Ù… Ø§Ù„Ø£Ø®ÙŠØ±" style="height: 52px; border-radius: 8px; border: 1px solid #e0e0e0; padding: 15px; font-size: 1rem; color: #555;">
+                </div>
+              </div>
+              
+              <!-- Email -->
+              <div class="col-md-6 mt-4">
+                <div class="position-relative">
+                  <label class="position-absolute bg-white px-2" style="top: -12px; right: 15px; font-size: 0.85rem; font-weight: 600; color: #333;">Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control shadow-none ps-5" placeholder="yourmail@gmail.com" style="height: 52px; border-radius: 8px; border: 1px solid #e0e0e0; padding: 15px; font-size: 1rem; color: #555;" dir="ltr">
+                  <i class="far fa-envelope position-absolute" style="top: 22px; left: 20px; color: #a0a0a0; font-size: 1.1rem;"></i>
+                </div>
+              </div>
+              
+              <!-- Phone -->
+              <div class="col-md-6 mt-4">
+                <div class="position-relative">
+                  <label class="position-absolute bg-white px-2" style="top: -12px; right: 15px; font-size: 0.85rem; font-weight: 600; color: #333; z-index: 10;">Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ <span class="text-danger">*</span></label>
+                  <div class="input-group" style="height: 52px; border-radius: 8px; border: 1px solid #e0e0e0; overflow: hidden;" dir="ltr">
+                    <span class="input-group-text bg-white border-0 pe-2 ps-3"><img src="https://flagcdn.com/w20/sa.png" width="24" alt="SA" class="border"> <i class="fas fa-caret-down ms-2" style="font-size: 0.8rem; color: #888;"></i></span>
+                    <input type="tel" class="form-control shadow-none border-0 ps-1" placeholder="+966" style="font-size: 1rem; color: #555;">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- What are you looking for -->
+              <div class="col-12 mt-4">
+                <div class="position-relative">
+                  <label class="position-absolute bg-white px-2" style="top: -12px; right: 15px; font-size: 0.85rem; font-weight: 600; color: #333; z-index: 10;">Ø¹Ù…Ø§ ØªØ¨Ø­Ø«ØŸ <span class="text-danger">*</span></label>
+                  <select class="form-select shadow-none" style="height: 52px; border-radius: 8px; border: 1px solid #e0e0e0; padding: 15px 20px; font-size: 1rem; color: #777; background-position: left .75rem center;">
+                    <option selected disabled>Ø§Ø®ØªØ± Ø®ÙŠØ§Ø±Ø§Ù‹</option>
+                    <option>Ù…Ø¹Ø¯Ø§Øª Ø§Ù„Ù…Ø®Ø§Ø¨Ø²</option>
+                    <option>Ø­Ù„ÙˆÙ„ Ø§Ù„ØªØºÙ„ÙŠÙ</option>
+                    <option>Ø§Ù„Ø§Ø³ØªØ´Ø§Ø±Ø§Øª ÙˆØ§Ù„ØªØ®Ø·ÙŠØ·</option>
+                  </select>
+                </div>
+              </div>
+              
+              <!-- Country -->
+              <div class="col-12 mt-4">
+                <div class="position-relative">
+                  <label class="position-absolute bg-white px-2" style="top: -12px; right: 15px; font-size: 0.85rem; font-weight: 600; color: #333; z-index: 10;">Ø§Ù„Ø¨Ù„Ø¯ <span class="text-danger">*</span></label>
+                  <select class="form-select shadow-none" style="height: 52px; border-radius: 8px; border: 1px solid #e0e0e0; padding: 15px 20px; font-size: 1rem; color: #555; background-position: left .75rem center;">
+                    <option selected>Ø§Ù„Ù…Ù…Ù„ÙƒØ© Ø§Ù„Ø¹Ø±Ø¨ÙŠØ© Ø§Ù„Ø³Ø¹ÙˆØ¯ÙŠØ©</option>
+                    <option>Ø§Ù„Ø¥Ù…Ø§Ø±Ø§Øª Ø§Ù„Ø¹Ø±Ø¨ÙŠØ© Ø§Ù„Ù…ØªØ­Ø¯Ø©</option>
+                  </select>
+                </div>
+              </div>
+              
+              <!-- State -->
+              <div class="col-12 mt-4">
+                <div class="position-relative">
+                  <label class="position-absolute bg-white px-2" style="top: -12px; right: 15px; font-size: 0.85rem; font-weight: 600; color: #333;">Ø§Ù„Ù…Ù†Ø·Ù‚Ø© / Ø§Ù„Ù…Ø­Ø§ÙØ¸Ø© <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control shadow-none" placeholder="Ø§ÙƒØªØ¨ Ø§Ù„Ù…Ù†Ø·Ù‚Ø© Ø£Ùˆ Ø§Ù„Ù…Ø­Ø§ÙØ¸Ø©" style="height: 52px; border-radius: 8px; border: 1px solid #e0e0e0; padding: 15px; font-size: 1rem; color: #555;">
+                </div>
+              </div>
+              
+              <!-- Message -->
+              <div class="col-12 mt-4">
+                <div class="position-relative">
+                  <label class="position-absolute bg-white px-2" style="top: -12px; right: 15px; font-size: 0.85rem; font-weight: 600; color: #333;">Ø§Ù„Ø±Ø³Ø§Ù„Ø©</label>
+                  <textarea class="form-control shadow-none" placeholder="Ø§ÙƒØªØ¨ Ø±Ø³Ø§Ù„ØªÙƒ Ù‡Ù†Ø§..." rows="5" style="border-radius: 8px; border: 1px solid #e0e0e0; padding: 20px 15px; font-size: 1rem; color: #555; resize: none;"></textarea>
+                </div>
+              </div>
+              
+              <!-- Submit Button -->
+              <div class="col-12 mt-4 pt-2">
+                <button type="submit" class="btn text-white px-5 py-3 rounded-pill fw-medium" style="background-color: #ccaa00; font-size: 1.05rem;">Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„Ø±Ø³Ø§Ù„Ø©</button>
+              </div>
+              
+            </div>
+          </form>
         </div>
+        
         <!-- Map Side -->
-        <div class="col-12 mt-5" data-aos="fade-up">
+        <div class="col-12 mt-5 pt-4" data-aos="fade-up">
           <div class="rounded-4 overflow-hidden shadow-sm border border-light" style="height: 400px;">
             <iframe src="https://maps.google.com/maps?q=Al%20Amir%20Muhammad%20Bin%20AbdulAziz%20Street,%20Al%20aziziya,%20Jeddah,%20KSA&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
@@ -838,9 +986,19 @@
     });
   </script>
 
-  <!-- Progress Bar Animation -->
+  <!-- Navbar Scroll & Progress Bar Animation -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Navbar scroll effect
+      const navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('navbar-scrolled');
+        } else {
+          navbar.classList.remove('navbar-scrolled');
+        }
+      });
+      
       const progressBlocks = document.querySelectorAll('.progress-block');
       
       const animateProgress = (entries, observer) => {
@@ -878,6 +1036,45 @@
       
       const observer = new IntersectionObserver(animateProgress, { threshold: 0.5 });
       progressBlocks.forEach(block => observer.observe(block));
+
+      // Stats Counter Animation
+      const counters = document.querySelectorAll('.counter-value');
+      const animateCounter = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = +counter.getAttribute('data-count');
+            let count = 0;
+            const speed = 200; // lower is faster
+            const inc = target / speed;
+            
+            const updateCount = () => {
+              count += inc;
+              if (count < target) {
+                // Formatting logic for large numbers
+                if (target > 1000) {
+                  counter.innerText = Math.ceil(count).toLocaleString();
+                } else {
+                  counter.innerText = Math.ceil(count);
+                }
+                requestAnimationFrame(updateCount);
+              } else {
+                if (target > 1000) {
+                  counter.innerText = target.toLocaleString();
+                } else {
+                  counter.innerText = target;
+                }
+              }
+            };
+            
+            updateCount();
+            observer.unobserve(counter);
+          }
+        });
+      };
+
+      const counterObserver = new IntersectionObserver(animateCounter, { threshold: 0.5 });
+      counters.forEach(counter => counterObserver.observe(counter));
     });
   </script>
 
