@@ -258,6 +258,9 @@ section {
 }
 
 .section-title h2 {
+  color: #ccaa00;
+  font-weight: 500;
+
   font-size: 2.8rem;
   position: relative;
   display: inline-block;
@@ -804,7 +807,7 @@ section {
   color: #ccaa00; /* Yellow */
   font-size: 2.8rem;
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 40px;
 }
@@ -918,7 +921,7 @@ section {
   color: #ccaa00; /* Yellow */
   font-size: 2.8rem;
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 50px;
 }
 
